@@ -7,10 +7,7 @@ module.exports = {
         "green-500": "#10A866",
         "yellow-500": "#FFCC05",
         gold: "#FFD700",
-      },
-      fontFamily: {
-        sans: ['"DM Sans"', "sans-serif"],
-      },
+      }
     },
   },
   plugins: [],
