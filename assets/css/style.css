@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+    grid-template-columns: auto auto auto;
+}
+/* main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 170px;
+} */
+
+/* .reviews {
+    max-width: 1200px;
+    display: flex;
+} */
