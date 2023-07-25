@@ -7,7 +7,8 @@ module.exports = {
         "green-500": "#10A866",
         "yellow-500": "#FFCC05",
         gold: "#FFD700",
-      }
+        blue: "#19899F",
+      },
     },
   },
   plugins: [],

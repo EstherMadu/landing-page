@@ -1,614 +1,909 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <link href="assets/css/style.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-</head>
-
-<body class="font-sans overflow-x-hidden">
-  <header>
-    <nav class="container flex md:grid navbar my-0 mx-auto items-center justify-between h-[98px] z-1">
-      <div class="nav-logo flex justify-between items-center px-10 w-full">
-        <img src="/images/beans-logo.svg" alt="beans-logo" title="beans" />
-        <button class="md:hidden">
-          <i class="ri-menu-line text-3xl"></i>
-        </button>
-      </div>
-      <div class="nav-menu hidden md:block">
-        <ul class="flex space-x-10">
-          <li>Liana</li>
-          <li>Bamboo</li>
-          <li>Foxx</li>
-        </ul>
-      </div>
-      <div class="nav-btn hidden md:block ml-6">
-        <button
-          class="bg-green-500 text-white px-6 py-2 rounded-md font-bold leading-1 tracking-wide whitespace-nowrap">
-          Try Now
-        </button>
-      </div>
-    </nav>
-    <div class="border-b border-black"></div>
-  </header>
-
-  <main>
-    <section class="relative">
-      <div
-        class="absolute -left-32 -bottom-56 w-full h-[400px] max-w-[400px] z-[1] bg-teal-300 rounded-full blur-[80px] opacity-40">
-      </div>
-      <div
-        class="absolute right-0 top-0 w-full h-[400px] max-w-[400px] z-[1] bg-[#E7F161] rounded-full blur-[80px] opacity-40">
-      </div>
-      <div class="container hero mt-24 mx-auto grid grid-cols-1 md:grid-cols-2 px-10 md:px-0 gap-8 relative z-[2]">
-        <div class="flex flex-col md:flex-row order-2 md:order-none items-center justify-center">
-          <div class="flex flex-row md:flex-col order-2 md:order-none">
-            <img src="/images/small-hero.svg" alt="give and get" title="give and get" />
-            <img src="/images/smaller-hero.svg" alt="referral image" title="referral" />
-            <img src="/images/smallest-hero.svg" alt="pink referral" title="pink referral" />
-          </div>
-          <div>
-            <img src="/images/give-get.svg" alt="give-get" title="give-get" />
-          </div>
+  <body class="font-sans overflow-x-hidden">
+    <header>
+      <nav
+        class="container flex md:grid navbar my-0 mx-auto items-center justify-between h-[98px] z-1"
+      >
+        <div class="nav-logo flex justify-between items-center px-10 w-full">
+          <img src="/images/beans-logo.svg" alt="beans-logo" title="beans" />
+          <button class="md:hidden">
+            <i class="ri-menu-line text-3xl"></i>
+          </button>
         </div>
-        <div>
-          <h3 class="font-bold text-green-500 text-2xl my-4">
-            Referral Program
-          </h3>
-          <h2 class="text-[40px] md:text-[50px] font-bold leading-none max-w-[500px] my-4 tracking-tight">
-            Turn your customers into advocates of your brand
-          </h2>
-          <span class="flex my-4 md:space-x-4">
-            <i class="ri-star-fill text-gold text-2xl"></i>
-            <i class="ri-star-fill text-gold text-2xl"></i>
-            <i class="ri-star-fill text-gold text-2xl"></i>
-            <i class="ri-star-fill text-gold text-2xl"></i>
-            <i class="ri-star-half-fill text-gold text-2xl"></i>
-            <p class="ml-4 text-2xl font-bold">4.7</p>
-            <p class="ml-2 mt-2">(254 reviews)</p>
-          </span>
-          <p class="text-[26px] max-w-[504px] leading-2 my-4">
-            Turn your customers into advocates of your brand
-          </p>
-          <button class="bg-green-500 w-full text-white h-[64px] text-2xl rounded-md">
+        <div class="nav-menu hidden md:block">
+          <ul class="flex space-x-10">
+            <li>Liana</li>
+            <li>Bamboo</li>
+            <li><a href="foxx.html">Foxx</a></li>
+          </ul>
+        </div>
+        <div class="nav-btn hidden md:block ml-6">
+          <button
+            class="bg-green-500 text-white px-6 py-2 rounded-md font-bold leading-1 tracking-wide whitespace-nowrap"
+          >
             Try Now
           </button>
         </div>
-      </div>
-    </section>
-    <section class="relative my-0 mt-32 tracking-tight">
-      <div
-        class="absolute -left-32 -bottom-32 w-full h-[400px] max-w-[400px] z-[1] bg-teal-300 rounded-full blur-[80px] opacity-10">
-      </div>
-      <div
-        class="absolute right-0 top-0 w-full h-[400px] max-w-[600px] z-[1] bg-teal-300 rounded-full blur-[80px] opacity-20">
-      </div>
-      <div class="grid items-center justify-center container mx-auto relative z-[2] px-10 md:px-0">
-        <h2 class="font-bold text-[35px] md:text-[50px]">
-          How does it work?
-        </h2>
-        <div class="flex items-center mt-10 md:mt-24 md:px-20">
-          <div class="space-y-10">
-            <div class="flex items-center space-x-2 md:opacity-80">
-              <div class="space-y-2">
-                <img src="/images/one.svg" alt="number-one" title="numbered one" class="" />
-                <div class="h-36 md:h-14 border-l-2 border-green-500 ml-6"></div>
-              </div>
-              <div class="space-y-4">
-                <h3 class="font-bold text-3xl">Join</h3>
-                <p class="max-w-[288px]">
-                  Customers get a personal referral link to share with their
-                  friends.
-                </p>
-              </div>
+      </nav>
+      <div class="border-b border-black"></div>
+    </header>
+
+    <main>
+      <section class="relative">
+        <div
+          class="absolute -left-32 -bottom-56 w-full h-[400px] max-w-[400px] z-[1] bg-teal-300 rounded-full blur-[80px] opacity-40"
+        ></div>
+        <div
+          class="absolute right-0 top-0 w-full h-[400px] max-w-[400px] z-[1] bg-[#E7F161] rounded-full blur-[80px] opacity-40"
+        ></div>
+        <div
+          class="container hero mt-24 mx-auto grid grid-cols-1 md:grid-cols-2 px-10 md:px-0 gap-8 relative z-[2]"
+        >
+          <div
+            class="flex flex-col md:flex-row order-2 md:order-none items-center justify-center"
+          >
+            <div class="flex flex-row md:flex-col order-2 md:order-none">
+              <img
+                src="/images/small-hero.svg"
+                alt="give and get"
+                title="give and get"
+              />
+              <img
+                src="/images/smaller-hero.svg"
+                alt="referral image"
+                title="referral"
+              />
+              <img
+                src="/images/smallest-hero.svg"
+                alt="pink referral"
+                title="pink referral"
+              />
             </div>
-            <div class="flex items-center space-x-2">
-              <div class="space-y-2">
-                <img src="/images/two.svg" alt="number-two" title="numbered two" />
-                <div class="h-36 md:h-14 border-l-2 border-green-500 ml-[20px]"></div>
-              </div>
-              <div class="space-y-4">
-                <h3 class="font-bold text-3xl">Refer</h3>
-                <p class="max-w-72">
-                  Friend completes their first purchase using the referral
-                  discount code.
-                </p>
-              </div>
-            </div>
-            <div class="flex items-center space-x-2 md:opacity-70">
-              <div class="space-y-2">
-                <img src="/images/three.svg" alt="number-three" title="numbered three" />
-                <div class="h-36 md:h-14 border-l-2 border-green-500 ml-6"></div>
-              </div>
-              <div class="space-y-4">
-                <h3 class="font-bold text-3xl">Earn</h3>
-                <p class="w-72">
-                  Referrers get their reward after their friends place their
-                  first order.
-                </p>
-              </div>
+            <div>
+              <img src="/images/give-get.svg" alt="give-get" title="give-get" />
             </div>
           </div>
-          <div class="grid items-center justify-center pt-44 pl-32 mx-auto hidden md:block">
-            <img src="/images/refer-friend.svg" alt="refer friend" title="refer-friend" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="relative my-10 md:my-40">
-      <div
-        class="absolute left-0 -bottom-32 w-full h-[400px] max-w-[900px] z-[1] bg-teal-300 rounded-full blur-[80px] opacity-20">
-      </div>
-      <div
-        class="absolute right-0 top-40 w-full h-[400px] max-w-[700px] z-[1] bg-[#E7F161] rounded-full blur-[80px] opacity-20">
-      </div>
-      <div class="container mx-auto relative z-[2] px-10 md:px-0">
-        <div class="flex items-center justify-center">
-          <h3 class="font-bold text-[35px] md:text-[50px] max-w-[500px] tracking-tight my-10 md:my-28 leading-[53px]">
-            Get everything you need to earn more
-          </h3>
-        </div>
-        <div class="bg-gray-50 border border-white border-4 rounded-3xl">
-          <div class="px-4 md:px-14 py-10">
-            <h3 class="text-[30px] md:text-[40px] font-bold leading-none max-w-[500px]">
-              Unlock the power of word-of- mouth
+          <div>
+            <h3 class="font-bold text-green-500 text-2xl my-4">
+              Referral Program
             </h3>
-            <p class="text-2xl max-w-[550px] mt-4">
-              Let your top customers bring to your business high ROI leads
-              that are unreachable through advertising channels.
+            <h2
+              class="text-[40px] md:text-[50px] font-bold leading-none max-w-[500px] my-4 tracking-tight"
+            >
+              Turn your customers into advocates of your brand
+            </h2>
+            <span class="flex my-4 md:space-x-4">
+              <i class="ri-star-fill text-gold text-2xl"></i>
+              <i class="ri-star-fill text-gold text-2xl"></i>
+              <i class="ri-star-fill text-gold text-2xl"></i>
+              <i class="ri-star-fill text-gold text-2xl"></i>
+              <i class="ri-star-half-fill text-gold text-2xl"></i>
+              <p class="ml-4 text-2xl font-bold">4.7</p>
+              <p class="ml-2 mt-2">(254 reviews)</p>
+            </span>
+            <p class="text-[26px] max-w-[504px] leading-2 my-4">
+              Turn your customers into advocates of your brand
+            </p>
+            <button
+              class="bg-green-500 w-full text-white h-[64px] text-2xl rounded-md"
+            >
+              Try Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="relative my-0 mt-32 tracking-tight">
+        <div
+          class="absolute -left-32 -bottom-32 w-full h-[400px] max-w-[400px] z-[1] bg-teal-300 rounded-full blur-[80px] opacity-10"
+        ></div>
+        <div
+          class="absolute right-0 top-0 w-full h-[400px] max-w-[600px] z-[1] bg-teal-300 rounded-full blur-[80px] opacity-20"
+        ></div>
+        <div
+          class="grid items-center justify-center container mx-auto relative z-[2] px-10 md:px-0"
+        >
+          <h2 class="font-bold text-[35px] md:text-[50px]">
+            How does it work?
+          </h2>
+          <div class="flex items-center mt-10 md:mt-24 md:px-20">
+            <div class="space-y-10">
+              <div class="flex items-center space-x-2 md:opacity-80">
+                <div class="flex flex-col items-center">
+                  <img
+                    src="/images/one.svg"
+                    alt="number-one"
+                    title="numbered one"
+                    class=""
+                  />
+                  <div class="h-36 md:h-14 border-l-2 border-green-500"></div>
+                </div>
+                <div class="space-y-4">
+                  <h3 class="font-bold text-3xl">Join</h3>
+                  <p class="max-w-[288px]">
+                    Customers get a personal referral link to share with their
+                    friends.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center justify-center space-x-2">
+                <div class="space-y-2">
+                  <img
+                    src="/images/two.svg"
+                    alt="number-two"
+                    title="numbered two"
+                    class="scale-150 md:scale-100"
+                  />
+                  <div class="h-36 md:h-14 border-l-2 border-green-500"></div>
+                </div>
+                <div class="space-y-4">
+                  <h3 class="font-bold text-3xl">Refer</h3>
+                  <p class="max-w-72">
+                    Friend completes their first purchase using the referral
+                    discount code.
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-2 md:opacity-70">
+                <div class="space-y-2">
+                  <img
+                    src="/images/three.svg"
+                    alt="number-three"
+                    title="numbered three"
+                  />
+                  <div
+                    class="h-36 md:h-14 border-l-2 border-green-500 md:ml-4 md:ml-[23px]"
+                  ></div>
+                </div>
+                <div class="space-y-4">
+                  <h3 class="font-bold text-3xl">Earn</h3>
+                  <p class="w-72">
+                    Referrers get their reward after their friends place their
+                    first order.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="grid items-center justify-center pt-44 pl-32 mx-auto hidden md:block"
+            >
+              <img
+                src="/images/refer-friend.svg"
+                alt="refer friend"
+                title="refer-friend"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative my-10 md:my-40">
+        <div
+          class="absolute left-0 -bottom-32 w-full h-[400px] max-w-[900px] z-[1] bg-teal-300 rounded-full blur-[80px] opacity-20"
+        ></div>
+        <div
+          class="absolute right-0 top-40 w-full h-[400px] max-w-[700px] z-[1] bg-[#E7F161] rounded-full blur-[80px] opacity-20"
+        ></div>
+        <div class="container mx-auto relative z-[2] px-10 md:px-0">
+          <div class="flex items-center justify-center">
+            <h3
+              class="font-bold text-[35px] md:text-[50px] max-w-[500px] tracking-tight my-10 md:my-28 leading-[53px]"
+            >
+              Get everything you need to earn more
+            </h3>
+          </div>
+          <div class="bg-gray-50 border border-white border-4 rounded-3xl">
+            <div class="px-4 md:px-14 py-10">
+              <h3
+                class="text-[30px] md:text-[40px] font-bold leading-none max-w-[500px]"
+              >
+                Unlock the power of word-of- mouth
+              </h3>
+              <p class="text-2xl max-w-[550px] mt-4">
+                Let your top customers bring to your business high ROI leads
+                that are unreachable through advertising channels.
+              </p>
+            </div>
+            <div class="flex flex-col md:flex-row">
+              <div class="order-2 md:order-none">
+                <img
+                  src="/images/people-coins.png"
+                  alt="gold coins"
+                  title="people-coins"
+                  class="md:-translate-x-20 md:translate-y-20 scale-110 my-10 px-6 md:px-0 md:my-0"
+                />
+              </div>
+              <div class="flex flex-col items-start md:mt-10 px-6 md:px-0">
+                <ul class="md:list-disc list-inside opacity-70">
+                  <li
+                    class="text-[#4F4F4F] font-bold text-[20px] md:text-2xl md:my-4 leading-none tracking-tight"
+                  >
+                    Lowest cost per action
+                  </li>
+                </ul>
+                <span class="flex md:space-x-2">
+                  <img
+                    src="/images/check-mark.svg"
+                    alt="simple
+                  check-mark"
+                    title="check-mark"
+                    class="hidden md:block"
+                  />
+                  <h3
+                    class="text-[#10A866] font-bold text-[22px] md:text-[28px] my-4"
+                  >
+                    Highest customer lifetime value
+                  </h3>
+                </span>
+                <p class="text-[20px] max-w-[400px] my-2 text-[#3C3C3C]">
+                  Referred customers spend more and are more loyal than ads
+                  generated leads.
+                </p>
+                <img
+                  src="/images/green-line.svg"
+                  alt="green line"
+                  title="green line"
+                  class="my-4 hidden md:block"
+                />
+
+                <ul class="md:list-disc list-inside my-4 opacity-70">
+                  <li
+                    class="text-[#4F4F4F] font-bold text-[20px] md:text-2xl leading-none tracking-tight"
+                  >
+                    Highest ROI
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="relative md:my-60 px-10 md:px-0">
+        <div
+          class="absolute -left-32 -bottom-32 w-full h-[400px] max-w-[800px] z-[1] bg-gradient-to-r from-blue-300 to-green-300 rounded-full blur-[80px] opacity-40"
+        ></div>
+        <div class="container mx-auto relative z-[2]">
+          <div
+            class="bg-gray-50 border border-white border-4 h-full rounded-3xl"
+          >
+            <div class="px-4 pt-6 md:px-14 md:pt-14">
+              <h3
+                class="text-[30px] md:text-[40px] font-bold leading-none max-w-[600px]"
+              >
+                Build the highest converting referral program
+              </h3>
+              <p class="text-2xl max-w-[600px] mt-4 tracking-tight leading-1">
+                Enhance each step of your referral funnel to get the highest
+                possible conversion rate and customer participation.
+              </p>
+            </div>
+            <div class="flex flex-col md:flex-row px-4 md:pl-14 items-center">
+              <div>
+                <span class="flex md:space-x-2 mt-8">
+                  <img
+                    src="/images/check-mark.svg"
+                    alt="simple
+                  check-mark"
+                    title="check-mark"
+                    class="hidden md:block"
+                  />
+                  <h3
+                    class="text-[#10A866] font-bold text-[22px] md:text-[28px] my-2"
+                  >
+                    Referral Dashboard
+                  </h3>
+                </span>
+                <ul class="md:list-disc list-inside md:px-10">
+                  <li
+                    class="text-[#3C3C3C] text-[20px] my-4 leading-none tracking-tight max-w-[600px]"
+                  >
+                    Make it easy and exciting for customers to track referral
+                    status and rewards.
+                  </li>
+                </ul>
+
+                <img
+                  src="/images/green-line.svg"
+                  alt="green line"
+                  title="green line"
+                  class="my-10 pl-6 hidden md:block"
+                />
+
+                <ul class="md:list-disc list-inside opacity-50 space-y-4">
+                  <li
+                    class="text-[#4F4F4F] font-bold text-[20px] md:text-2xl leading-none tracking-tight"
+                  >
+                    Referral flow
+                  </li>
+                  <li
+                    class="text-[#4F4F4F] font-bold text-[20px] md:text-2xl leading-none tracking-tight"
+                  >
+                    Email Notifications
+                  </li>
+                </ul>
+              </div>
+
+              <div class="my-6 md:my-0">
+                <img
+                  src="/images/bar-chart.svg"
+                  alt="bar chart"
+                  title="bar chart"
+                  class="md:scale-125 md:translate-y-10 md:translate-x-20"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="px-10 md:px-0 relative my-10 md:my-60">
+        <div
+          class="absolute -left-32 -bottom-32 w-full h-[800px] max-w-[400px] z-[1] bg-blue-300 rounded-full blur-[80px] opacity-40"
+        ></div>
+        <div
+          class="absolute right-0 top-0 w-full h-[400px] max-w-[400px] z-[1] bg-[#E7F161] rounded-full blur-[80px] opacity-20"
+        ></div>
+        <div class="container mx-auto relative z-[2]">
+          <div
+            class="bg-gray-50 border border-white border-4 h-full rounded-3xl grid"
+          >
+            <div class="px-4 pt-6 md:px-10">
+              <h3
+                class="text-[30px] md:text-[40px] font-bold leading-none left-20 max-w-[600px]"
+              >
+                Manage everything like a pro
+              </h3>
+              <p class="text-2xl max-w-[550px] mt-4 leading-1">
+                Update your program, monitor every referral, and review
+                actionable metrics all in one convenient place.
+              </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-center">
+              <div class="order-2 md:order-none">
+                <img
+                  src="/images/referral-popup.png"
+                  alt="referral-popup"
+                  title="referral-popup"
+                  class="md:translate-y-64"
+                />
+              </div>
+
+              <div class="px-4 md:py-6">
+                <span class="flex md:space-x-2">
+                  <img
+                    src="/images/check-mark.svg"
+                    alt="simple
+                  check-mark"
+                    title="check-mark"
+                    class="hidden md:block"
+                  />
+                  <h3
+                    class="text-[#10A866] font-bold text-[22px] md:text-[28px] my-4"
+                  >
+                    Referrals overview
+                  </h3>
+                </span>
+
+                <p
+                  class="text-[#3C3C3C] text-[20px] my-4 leading-none tracking-tight max-w-[500px] md:px-10"
+                >
+                  Easily track referral sources, and see which customers are
+                  superstar referrers.
+                </p>
+
+                <img
+                  src="/images/green-line.svg"
+                  alt="green line"
+                  title="green line"
+                  class="hidden md:block my-10 pl-10"
+                />
+
+                <ul class="md:list-disc opacity-50 space-y-4 md:px-10">
+                  <li
+                    class="text-[#4F4F4F] font-bold text-[20px] md:text-2xl leading-none tracking-tight"
+                  >
+                    Builtin templates
+                  </li>
+                  <li
+                    class="text-[#4F4F4F] font-bold text-[20px] md:text-2xl leading-none tracking-tight"
+                  >
+                    Powerful analytics
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="hidden md:block relative my-40">
+        <div
+          class="absolute -left-32 -bottom-0 w-full h-[700px] max-w-[1200px] z-[1] bg-gradient-to-r from-blue-300 to-yellow-500 rounded-full blur-[80px] opacity-10"
+        ></div>
+        <div
+          class="absolute -left-32 -bottom-32 w-full h-[700px] max-w-[1200px] z-[1] bg-gradient-to-r from-blue-300 to-green-300 rounded-full blur-[80px] opacity-10"
+        ></div>
+        <div
+          class="relative container mx-auto grid items-center justify-center z-[2]"
+        >
+          <h3
+            class="text-[50px] font-bold w-7/12 text-center mx-auto leading-none tracking-tight my-10"
+          >
+            Do even more with your referral program
+          </h3>
+
+          <div class="grid items-center justify-center">
+            <img
+              src="/images/connect-integrations.svg"
+              alt="integrations-logo"
+              title="integrations-logo"
+              class="-mb-10"
+            />
+            <img
+              src="/images/gradient-line.svg"
+              alt="gradient-line"
+              title="gradient-line"
+              class="ml-20"
+            />
+          </div>
+          <img
+            src="/images/integrations.svg"
+            alt="integrations"
+            title="integrations"
+          />
+        </div>
+      </section>
+      <section class="relative my-40">
+        <div
+          class="absolute -left-32 -bottom-32 w-full h-[800px] max-w-[400px] z-[1] bg-[#0ABB5B] rounded-full blur-[80px] opacity-20"
+        ></div>
+        <div
+          class="absolute right-0 -bottom-32 w-full h-[900px] max-w-[800px] z-[1] bg-[#10A894] rounded-full blur-[80px] opacity-20"
+        ></div>
+        <div
+          class="container relative mx-auto z-[2] flex flex-col items-center justify-center md:items-start md:justify-start text-center md:text-left"
+        >
+          <div class="space-y-8 px-4 md:px-0 flex flex-col">
+            <h3
+              class="text-[35px] md:text-[50px] font-bold max-w-[600px] leading-none tracking-tight"
+            >
+              Build the most efficient referral program solution
+            </h3>
+            <p class="text-[#3C3C3C] max-w-[500px] text-2xl">
+              Create a referral program that drives customer engagement and
+              yields sales.
             </p>
           </div>
           <div class="flex flex-col md:flex-row">
             <div class="order-2 md:order-none">
-              <img src="/images/people-coins.png" alt="gold coins" title="people-coins"
-                class="md:-translate-x-20 md:translate-y-20 scale-110 my-10 px-6 md:px-0 md:my-0" />
+              <img
+                src="/images/referral-template.png"
+                alt="referral-template"
+                title="referral-template"
+                class="md:translate-y-32 md:scale-125"
+              />
             </div>
-            <div class="flex flex-col items-start md:mt-10 px-6 md:px-0">
-              <ul class="md:list-disc list-inside opacity-70">
-                <li class="text-[#4F4F4F] font-bold text-[20px] md:text-2xl md:my-4 leading-none tracking-tight">
-                  Lowest cost per action
-                </li>
-              </ul>
-              <span class="flex md:space-x-2">
-                <img src="/images/check-mark.svg" alt="simple
-                  check-mark" title="check-mark" class="hidden md:block" />
-                <h3 class="text-[#10A866] font-bold text-[22px] md:text-[28px] my-4">
-                  Highest customer lifetime value
-                </h3>
-              </span>
-              <p class="text-[20px] max-w-[400px] my-2 text-[#3C3C3C]">
-                Referred customers spend more and are more loyal than ads
-                generated leads.
-              </p>
-              <img src="/images/green-line.svg" alt="green line" title="green line" class="my-4 hidden md:block" />
-
-              <ul class="md:list-disc list-inside my-4 opacity-70">
-                <li class="text-[#4F4F4F] font-bold text-[20px] md:text-2xl leading-none tracking-tight">
-                  Highest ROI
-                </li>
-              </ul>
+            <div
+              class="flex md:flex-col items-center bg-gray-50 border-4 border-white w-[300px] rounded-2xl h-[100px] md:h-[600px]"
+            >
+              <img
+                src="/images/green-border.png"
+                alt="hero"
+                title="hero"
+                class="w-56"
+              />
+              <div
+                class="flex flex-row md:flex-col md:-pt-14 md:-translate-y-14"
+              >
+                <img src="/images/small-template.png" alt="hero" title="hero" />
+                <img src="/images/small-template.png" alt="hero" title="hero" />
+                <img
+                  src="/images/smaller-template.png"
+                  alt="hero"
+                  title="hero"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="relative md:my-60 px-10 md:px-0">
-      <div
-        class="absolute -left-32 -bottom-32 w-full h-[400px] max-w-[800px] z-[1] bg-gradient-to-r from-blue-300 to-green-300 rounded-full blur-[80px] opacity-40">
-      </div>
-      <div class="container mx-auto relative z-[2]">
-        <div class="bg-gray-50 border border-white border-4 h-full rounded-3xl">
-          <div class="px-4 pt-6 md:px-14 md:pt-14">
-            <h3 class="text-[30px] md:text-[40px] font-bold leading-none max-w-[600px]">
-              Build the highest converting referral program
+      </section>
+      <section class="relative my-10">
+        <div
+          class="absolute -left-32 -top-0 w-full h-[400px] max-w-[1200px] z-[1] bg-gradient-to-r from-blue-300 to-teal-300 rounded-full blur-[80px] opacity-20"
+        ></div>
+        <div
+          class="container mx-auto grid items-center justify-center relative"
+        >
+          <div
+            class="flex flex-col items-center justify-center text-center px-10 md:px-0"
+          >
+            <h3
+              class="font-bold text-[35px] md:text-[50px] max-w-[700px] leading-none tracking-tight"
+            >
+              Empowering fast-growing businesses everywhere
             </h3>
-            <p class="text-2xl max-w-[600px] mt-4 tracking-tight leading-1">
-              Enhance each step of your referral funnel to get the highest
-              possible conversion rate and customer participation.
+            <p class="max-w-[700px] text-[20px] md:text-[28px] my-10">
+              +1200 happy customers love us because of the simple setting up and
+              the reactivity of our support
             </p>
           </div>
-          <div class="flex flex-col md:flex-row px-4 md:pl-14 items-center">
-            <div>
-              <span class="flex md:space-x-2 mt-8">
-                <img src="/images/check-mark.svg" alt="simple
-                  check-mark" title="check-mark" class="hidden md:block" />
-                <h3 class="text-[#10A866] font-bold text-[22px] md:text-[28px] my-2">
-                  Referral Dashboard
-                </h3>
-              </span>
-              <ul class="md:list-disc list-inside md:px-10">
-                <li class="text-[#3C3C3C] text-[20px] my-4 leading-none tracking-tight max-w-[600px]">
-                  Make it easy and exciting for customers to track referral
-                  status and rewards.
-                </li>
-              </ul>
-
-              <img src="/images/green-line.svg" alt="green line" title="green line"
-                class="my-10 pl-6 hidden md:block" />
-
-              <ul class="md:list-disc list-inside opacity-50 space-y-4">
-                <li class="text-[#4F4F4F] font-bold text-[20px] md:text-2xl leading-none tracking-tight">
-                  Referral flow
-                </li>
-                <li class="text-[#4F4F4F] font-bold text-[20px] md:text-2xl leading-none tracking-tight">
-                  Email Notifications
-                </li>
-              </ul>
+          <div
+            class="grid grid-col items-center justify-center gap-4 md:gap-20 py-20 md:px-0"
+          >
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 items-center justify-center md:space-y-2"
+            >
+              <div class="flex items-center justify-center">
+                <img
+                  src="/images/logo-usimplyreason.svg"
+                  alt="logo-usimplyreason"
+                  title="logo-usimplyreason"
+                />
+              </div>
+              <div class="flex items-center justify-center">
+                <img
+                  src="/images/dana-home.svg"
+                  alt="dana-home"
+                  title="dana-home"
+                />
+              </div>
+              <div class="flex items-center justify-center">
+                <img
+                  src="/images/paula-carrol.svg"
+                  alt="paula-carrol"
+                  title="paula-carrol"
+                />
+              </div>
+              <div class="flex items-center justify-center">
+                <img
+                  src="/images/daisy-dukes.png"
+                  alt="daisy-dukes"
+                  title="daisy-dukes"
+                />
+              </div>
+              <div class="flex items-center justify-center">
+                <img
+                  src="/images/eternally-herbal.png"
+                  alt="eternally-herbal"
+                  title="eternally-herbal"
+                />
+              </div>
+              <div class="flex items-center justify-center">
+                <img
+                  src="/images/divine-goddess.png"
+                  alt="divine-goddess"
+                  title="divine-goddess"
+                />
+              </div>
+              <div class="flex items-center justify-center">
+                <img src="/images/ozone.svg" alt="ozone" title="ozone" />
+              </div>
+              <div class="flex items-center justify-center">
+                <img
+                  src="/images/opal-ruby.svg"
+                  alt="opalRuby"
+                  title="opalRuby"
+                />
+              </div>
             </div>
-
-            <div class="my-6 md:my-0">
-              <img src="/images/bar-chart.svg" alt="bar chart" title="bar chart"
-                class="md:scale-125 md:translate-y-10 md:translate-x-20" />
+            class="h-20" class="h-20" class="h-20" class="h-20" class="h-20"
+            class="h-20" class="h-20" class="h-20"
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div
+              class="max-w-lg rounded-xl overflow-hidden bg-white shadow-lg mb-8 swiper-slide flex flex-col items-start"
+            >
+              <div class="flex flex-col items-start px-6 py-4 text-left">
+                <h3 class="font-bold text-xl mb-2">Great result</h3>
+                <span>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-half-fill text-gold"></i>
+                </span>
+                <p class="text-gray-700 text-base">
+                  To be honest when we started with Beans we were expecting an
+                  increase from 15% to 20%. expecting an increase from 15% to
+                  20%
+                </p>
+              </div>
+              <div
+                class="flex flex-row items-center space-x-4 px-4 md:px-6 py-6"
+              >
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                  ><i class="ri-store-line text-2xl"></i
+                ></span>
+                <span
+                  class="inline-block text-xl font-bold text-gray-700 mr-2 mb-2"
+                  >Paula Carol</span
+                >
+              </div>
+            </div>
+            <div
+              class="max-w-lg rounded-xl overflow-hidden bg-white shadow-lg mb-8 swiper-slide flex flex-col items-start"
+            >
+              <div class="flex flex-col items-start px-6 py-4 text-left">
+                <h3 class="font-bold text-xl mb-2">Great result</h3>
+                <span>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-half-fill text-gold"></i>
+                </span>
+                <p class="text-gray-700 text-base">
+                  To be honest when we started with Beans we were expecting an
+                  increase from 15% to 20%. expecting an increase from 15% to
+                  20%
+                </p>
+              </div>
+              <div
+                class="flex flex-row items-center space-x-4 px-4 md:px-6 py-6"
+              >
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                  ><i class="ri-store-line text-2xl"></i
+                ></span>
+                <span
+                  class="inline-block text-xl font-bold text-gray-700 mr-2 mb-2"
+                  >Paula Carol</span
+                >
+              </div>
+            </div>
+            <div
+              class="max-w-lg rounded-xl overflow-hidden bg-white shadow-lg mb-8 swiper-slide flex flex-col items-start"
+            >
+              <div class="flex flex-col items-start px-6 py-4 text-left">
+                <h3 class="font-bold text-xl mb-2">Great result</h3>
+                <span>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-half-fill text-gold"></i>
+                </span>
+                <p class="text-gray-700 text-base">
+                  To be honest when we started with Beans we were expecting an
+                  increase from 15% to 20%. expecting an increase from 15% to
+                  20%
+                </p>
+              </div>
+              <div
+                class="flex flex-row items-center space-x-4 px-4 md:px-6 py-6"
+              >
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                  ><i class="ri-store-line text-2xl"></i
+                ></span>
+                <span
+                  class="inline-block text-xl font-bold text-gray-700 mr-2 mb-2"
+                  >Paula Carol</span
+                >
+              </div>
+            </div>
+            <div
+              class="max-w-lg rounded-xl overflow-hidden bg-white shadow-lg mb-8 swiper-slide flex flex-col items-start"
+            >
+              <div class="flex flex-col items-start px-6 py-4 text-left">
+                <h3 class="font-bold text-xl mb-2">Great result</h3>
+                <span>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-half-fill text-gold"></i>
+                </span>
+                <p class="text-gray-700 text-base">
+                  To be honest when we started with Beans we were expecting an
+                  increase from 15% to 20%. expecting an increase from 15% to
+                  20%
+                </p>
+              </div>
+              <div
+                class="flex flex-row items-center space-x-4 px-4 md:px-6 py-6"
+              >
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                  ><i class="ri-store-line text-2xl"></i
+                ></span>
+                <span
+                  class="inline-block text-xl font-bold text-gray-700 mr-2 mb-2"
+                  >Paula Carol</span
+                >
+              </div>
+            </div>
+            <div
+              class="max-w-lg rounded-xl overflow-hidden bg-white shadow-lg mb-8 swiper-slide flex flex-col items-start"
+            >
+              <div class="flex flex-col items-start px-6 py-4 text-left">
+                <h3 class="font-bold text-xl mb-2">Great result</h3>
+                <span>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-half-fill text-gold"></i>
+                </span>
+                <p class="text-gray-700 text-base">
+                  To be honest when we started with Beans we were expecting an
+                  increase from 15% to 20%. expecting an increase from 15% to
+                  20%
+                </p>
+              </div>
+              <div
+                class="flex flex-row items-center space-x-4 px-4 md:px-6 py-6"
+              >
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                  ><i class="ri-store-line text-2xl"></i
+                ></span>
+                <span
+                  class="inline-block text-xl font-bold text-gray-700 mr-2 mb-2"
+                  >Paula Carol</span
+                >
+              </div>
+            </div>
+            <div
+              class="max-w-lg rounded-xl overflow-hidden bg-white shadow-lg mb-8 swiper-slide flex flex-col items-start"
+            >
+              <div class="flex flex-col items-start px-6 py-4 text-left">
+                <h3 class="font-bold text-xl mb-2">Great result</h3>
+                <span>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-fill text-gold"></i>
+                  <i class="ri-star-half-fill text-gold"></i>
+                </span>
+                <p class="text-gray-700 text-base">
+                  To be honest when we started with Beans we were expecting an
+                  increase from 15% to 20%. expecting an increase from 15% to
+                  20%
+                </p>
+              </div>
+              <div
+                class="flex flex-row items-center space-x-4 px-4 md:px-6 py-6"
+              >
+                <span
+                  class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+                  ><i class="ri-store-line text-2xl"></i
+                ></span>
+                <span
+                  class="inline-block text-xl font-bold text-gray-700 mr-2 mb-2"
+                  >Paula Carol</span
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="px-10 md:px-0 relative my-10 md:my-60">
-      <div
-        class="absolute -left-32 -bottom-32 w-full h-[800px] max-w-[400px] z-[1] bg-blue-300 rounded-full blur-[80px] opacity-40">
-      </div>
-      <div
-        class="absolute right-0 top-0 w-full h-[400px] max-w-[400px] z-[1] bg-[#E7F161] rounded-full blur-[80px] opacity-20">
-      </div>
-      <div class="container mx-auto relative z-[2]">
-        <div class="bg-gray-50 border border-white border-4 h-full rounded-3xl grid">
-          <div class="px-4 pt-6 md:px-10">
-            <h3 class="text-[30px] md:text-[40px] font-bold leading-none left-20 max-w-[600px]">
-              Manage everything like a pro
-            </h3>
-            <p class="text-2xl max-w-[550px] mt-4 leading-1">
-              Update your program, monitor every referral, and review
-              actionable metrics all in one convenient place.
-            </p>
-          </div>
-
-          <div class="flex flex-col md:flex-row items-center justify-center">
-            <div class="order-2 md:order-none">
-              <img src="/images/referral-popup.png" alt="referral-popup" title="referral-popup"
-                class="md:translate-y-64" />
-            </div>
-
-            <div class="px-4 md:py-6">
-              <span class="flex md:space-x-2">
-                <img src="/images/check-mark.svg" alt="simple
-                  check-mark" title="check-mark" class="hidden md:block" />
-                <h3 class="text-[#10A866] font-bold text-[22px] md:text-[28px] my-4">
-                  Referrals overview
-                </h3>
-              </span>
-
-              <p class="text-[#3C3C3C] text-[20px] my-4 leading-none tracking-tight max-w-[500px] md:px-10">
-                Easily track referral sources, and see which customers are
-                superstar referrers.
-              </p>
-
-              <img src="/images/green-line.svg" alt="green line" title="green line"
-                class="hidden md:block my-10 pl-10" />
-
-              <ul class="md:list-disc opacity-50 space-y-4 md:px-10">
-                <li class="text-[#4F4F4F] font-bold text-[20px] md:text-2xl leading-none tracking-tight">
-                  Builtin templates
-                </li>
-                <li class="text-[#4F4F4F] font-bold text-[20px] md:text-2xl leading-none tracking-tight">
-                  Powerful analytics
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="hidden md:block relative my-40">
-      <div
-        class="absolute -left-32 -bottom-0 w-full h-[700px] max-w-[1200px] z-[1] bg-gradient-to-r from-blue-300 to-yellow-500 rounded-full blur-[80px] opacity-10">
-      </div>
-      <div
-        class="absolute -left-32 -bottom-32 w-full h-[700px] max-w-[1200px] z-[1] bg-gradient-to-r from-blue-300 to-green-300 rounded-full blur-[80px] opacity-10">
-      </div>
-      <div class="relative container mx-auto grid items-center justify-center z-[2]">
-        <h3 class="text-[50px] font-bold w-7/12 text-center mx-auto leading-none tracking-tight my-10">
-          Do even more with your referral program
-        </h3>
-
-        <div class="grid items-center justify-center">
-          <img src="/images/connect-integrations.svg" alt="integrations-logo" title="integrations-logo"
-            class="-mb-10" />
-          <img src="/images/gradient-line.svg" alt="gradient-line" title="gradient-line" class="ml-20" />
-        </div>
-        <img src="/images/integrations.svg" alt="integrations" title="integrations" />
-      </div>
-    </section>
-    <section class="relative my-40">
-      <div
-        class="absolute -left-32 -bottom-32 w-full h-[800px] max-w-[400px] z-[1] bg-[#0ABB5B] rounded-full blur-[80px] opacity-20">
-      </div>
-      <div
-        class="absolute right-0 -bottom-32 w-full h-[900px] max-w-[800px] z-[1] bg-[#10A894] rounded-full blur-[80px] opacity-20">
-      </div>
-      <div class="container relative mx-auto z-[2]">
-        <div class="space-y-8">
-          <h3 class="text-[50px] font-bold w-7/12 leading-none tracking-tight">
-            Build the most efficient referral program solution
+      </section>
+      <section class="relative my-40">
+        <div
+          class="absolute right-0 top-0 w-full h-[500px] max-w-[400px] z-[1] bg-blue-400 rounded-full blur-[80px] opacity-20"
+        ></div>
+        <div
+          class="absolute -left-32 top-18 w-full h-[400px] max-w-[400px] z-[1] bg-yellow-300 rounded-full blur-[80px] opacity-10"
+        ></div>
+        <div
+          class="container mx-auto relative flex flex-col items-center justify-center text-center px-10 md:px-0"
+        >
+          <h3
+            class="font-bold text-[35px] md:text-[55px] tracking-tight leading-1 max-w-[500px] leading-none"
+          >
+            Ready to grow your business ?
           </h3>
-          <p class="text-[#3C3C3C] w-7/12 text-2xl">
-            Create a referral program that drives customer engagement and
-            yields sales.
-          </p>
+          <button
+            class="bg-green-500 w-72 md:w-56 text-2xl font-bold text-white rounded-md py-2 leading-1 my-6 md:my-16"
+          >
+            Try Now
+          </button>
         </div>
-        <div>
-          <img src="/images/referral-template.png" alt="referral-template" title="referral-template" />
-        </div>
-      </div>
-    </section>
-    <section class="relative my-10">
+      </section>
+    </main>
+    <footer class="bg-[#191F2A]">
       <div
-        class="absolute -left-32 -top-0 w-full h-[400px] max-w-[1200px] z-[1] bg-gradient-to-r from-blue-300 to-teal-300 rounded-full blur-[80px] opacity-20">
-      </div>
-      <div class="container mx-auto grid items-center justify-center relative">
-        <div class="flex flex-col items-center justify-center text-center px-10 md:px-0">
-          <h3 class="font-bold text-[35px] md:text-[50px] max-w-[700px] leading-none tracking-tight">
-            Empowering fast-growing businesses everywhere
-          </h3>
-          <p class="max-w-[700px] text-[20px] md:text-[28px] my-10">
-            +1200 happy customers love us because of the simple setting up and
-            the reactivity of our support
-          </p>
-        </div>
-        <div class="grid gap-20 py-20 px-8 md:px-0">
-          <div class="grid grid-cols-2 md:grid-cols-4 space-x-2 space-y-2">
-            <img src="/images/logo-usimplyreason.svg" alt="logo-usimplyreason" title="logo-usimplyreason" />
-            <img src="/images/dana-home.svg" alt="dana-home" title="dana-home" />
-            <img src="/images/paula-carrol.svg" alt="paula-carrol" title="paula-carrol" />
-            <img src="/images/daisy-dukes.svg" alt="daisy-dukes" title="daisy-dukes" />
-          </div>
-          <div class="grid grid-cols-2 md:grid-cols-4 space-x-2 space-y-2">
-            <img src="/images/eternally-herbal.svg" alt="eternally-herbal" title="eternally-herbal" />
-            <img src="/images/divine-goddess.svg" alt="divine-goddess" title="divine-goddess" />
-            <img src="/images/ozone.svg" alt="ozone" title="ozone" class="hidden md:block" />
-            <img src="/images/opal-ruby.svg" alt="opalRuby" title="opalRuby" class="hidden md:block" />
-          </div>
-        </div>
-      </div>
-    </section>
+        class="max-w-[1200px] mx-auto grid md:grid-cols-5 text-gray-300 px-8 py-20 gap-10"
+      >
+        <ul class="text-center md:text-left space-y-4">
+          <li class="flex items-center justify-center md:justify-start">
+            <img
+              src="/images/white-logo.svg"
+              alt="white-logo"
+              title="white-logo"
+            />
+          </li>
+          <li>hello@trybeans.com</li>
+          <li>650-449-7300</li>
+          <span
+            class="flex text-[#DCDCDC] text-2xl items-center justify-center md:justify-start space-x-2"
+          >
+            <i class="ri-linkedin-box-fill"></i>
+            <i class="ri-twitter-fill"></i>
+            <i class="ri-youtube-fill"></i>
+            <i class="ri-facebook-fill"></i>
+          </span>
+        </ul>
 
-    <section>
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
+        <ul class="space-y-4 text-center md:text-left">
+          <li class="font-bold">SOLUTIONS</li>
+          <li>Rewards Program</li>
+          <li>Social Media Automation</li>
+          <li>Referral Program</li>
+          <li>Smart Popups</li>
+          <li>Notification Widget</li>
+          <li>
+            <a href="foxx.html" title="email automation">Marketing Emails</a>
+          </li>
+        </ul>
+        <ul class="space-y-4 text-center md:text-left">
+          <li class="font-bold">RESOURCES</li>
+          <li>Customers</li>
+          <li>Request a demo</li>
+          <li>Help Center</li>
+          <li>API</li>
+        </ul>
+        <ul class="space-y-4 text-center md:text-left">
+          <li class="font-bold">BLOG</li>
+          <li>Market Research</li>
+          <li>How to</li>
+          <li>Apps & Tools</li>
+          <li>Interview</li>
+        </ul>
+        <ul class="space-y-4 text-center md:text-left">
+          <li class="font-bold">COMPANY</li>
+          <li>About us</li>
+          <li>Privacy policy</li>
+          <li>Term of use</li>
+          <li class="list-disc list-inside md:list-outside">Contact</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-          <div class="max-w-lg rounded-xl overflow-hidden bg-white shadow-lg mb-8 swiper-slide">
-            <div class="flex flex-col items-start px-6 py-4 text-left">
-              <h3 class="font-bold text-xl mb-2">Great result</h3>
-              <span>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-half-fill text-gold"></i>
-              </span>
-              <p class="text-gray-700 text-base">
-                To be honest when we started with Beans we were expecting an
-                increase from 15% to 20%. expecting an increase from 15% to
-                20%
-              </p>
-            </div>
-            <div class="flex flex-row items-center space-x-4 px-6 pt-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"><i
-                  class="ri-store-line text-2xl"></i></span>
-              <span class="inline-block text-xl font-bold text-gray-700 mr-2 mb-2">Paula Carol</span>
-            </div>
-          </div>
-          <div class="max-w-lg rounded-xl overflow-hidden bg-white shadow-lg mb-8 swiper-slide">
-            <div class="flex flex-col items-start px-6 py-4 text-left">
-              <h3 class="font-bold text-xl mb-2">Great result</h3>
-              <span>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-half-fill text-gold"></i>
-              </span>
-              <p class="text-gray-700 text-base">
-                To be honest when we started with Beans we were expecting an
-                increase from 15% to 20%. expecting an increase from 15% to
-                20%
-              </p>
-            </div>
-            <div class="flex flex-row items-center space-x-4 px-6 pt-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"><i
-                  class="ri-store-line text-2xl"></i></span>
-              <span class="inline-block text-xl font-bold text-gray-700 mr-2 mb-2">Paula Carol</span>
-            </div>
-          </div>
-          <div class="max-w-lg rounded-xl overflow-hidden bg-white shadow-lg mb-8 swiper-slide">
-            <div class="flex flex-col items-start px-6 py-4 text-left">
-              <h3 class="font-bold text-xl mb-2">Great result</h3>
-              <span>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-half-fill text-gold"></i>
-              </span>
-              <p class="text-gray-700 text-base">
-                To be honest when we started with Beans we were expecting an
-                increase from 15% to 20%. expecting an increase from 15% to
-                20%
-              </p>
-            </div>
-            <div class="flex flex-row items-center space-x-4 px-6 pt-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"><i
-                  class="ri-store-line text-2xl"></i></span>
-              <span class="inline-block text-xl font-bold text-gray-700 mr-2 mb-2">Paula Carol</span>
-            </div>
-          </div>
-          <div class="max-w-lg rounded-xl overflow-hidden bg-white shadow-lg mb-8 swiper-slide">
-            <div class="flex flex-col items-start px-6 py-4 text-left">
-              <h3 class="font-bold text-xl mb-2">Great result</h3>
-              <span>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-half-fill text-gold"></i>
-              </span>
-              <p class="text-gray-700 text-base">
-                To be honest when we started with Beans we were expecting an
-                increase from 15% to 20%. expecting an increase from 15% to
-                20%
-              </p>
-            </div>
-            <div class="flex flex-row items-center space-x-4 px-6 pt-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"><i
-                  class="ri-store-line text-2xl"></i></span>
-              <span class="inline-block text-xl font-bold text-gray-700 mr-2 mb-2">Paula Carol</span>
-            </div>
-          </div>
-          <div class="max-w-lg rounded-xl overflow-hidden bg-white shadow-lg mb-8 swiper-slide">
-            <div class="flex flex-col items-start px-6 py-4 text-left">
-              <h3 class="font-bold text-xl mb-2">Great result</h3>
-              <span>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-half-fill text-gold"></i>
-              </span>
-              <p class="text-gray-700 text-base">
-                To be honest when we started with Beans we were expecting an
-                increase from 15% to 20%. expecting an increase from 15% to
-                20%
-              </p>
-            </div>
-            <div class="flex flex-row items-center space-x-4 px-6 pt-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"><i
-                  class="ri-store-line text-2xl"></i></span>
-              <span class="inline-block text-xl font-bold text-gray-700 mr-2 mb-2">Paula Carol</span>
-            </div>
-          </div>
-          <div class="max-w-lg rounded-xl overflow-hidden bg-white shadow-lg mb-8 swiper-slide">
-            <div class="flex flex-col items-start px-6 py-4 text-left">
-              <h3 class="font-bold text-xl mb-2">Great result</h3>
-              <span>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-fill text-gold"></i>
-                <i class="ri-star-half-fill text-gold"></i>
-              </span>
-              <p class="text-gray-700 text-base">
-                To be honest when we started with Beans we were expecting an
-                increase from 15% to 20%. expecting an increase from 15% to
-                20%
-              </p>
-            </div>
-            <div class="flex flex-row items-center space-x-4 px-6 pt-4 pb-2">
-              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"><i
-                  class="ri-store-line text-2xl"></i></span>
-              <span class="inline-block text-xl font-bold text-gray-700 mr-2 mb-2">Paula Carol</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="relative my-40">
-      <div
-        class="absolute right-0 top-0 w-full h-[500px] max-w-[400px] z-[1] bg-blue-400 rounded-full blur-[80px] opacity-20">
-      </div>
-      <div
-        class="absolute -left-32 top-18 w-full h-[400px] max-w-[400px] z-[1] bg-yellow-300 rounded-full blur-[80px] opacity-10">
-      </div>
-      <div class="container mx-auto relative flex flex-col items-center justify-center text-center px-10 md:px-0">
-        <h3 class="font-bold text-[35px] md:text-[55px] tracking-tight leading-1 max-w-[500px] leading-none">
-          Ready to grow your business ?
-        </h3>
-        <button class="bg-green-500 w-72 md:w-56 text-2xl font-bold text-white rounded-md py-2 leading-1 my-6 md:my-16">
-          Try Now
-        </button>
-      </div>
-    </section>
-  </main>
-  <footer class="bg-[#191F2A]">
-    <div class="max-w-[1200px] mx-auto grid md:grid-cols-5 text-gray-300 px-8 py-20 gap-10">
-      <ul class="text-center md:text-left space-y-4">
-        <li class="flex items-center justify-center md:justify-start">
-          <img src="/images/white-logo.svg" alt="white-logo" title="white-logo" />
-        </li>
-        <li>hello@trybeans.com</li>
-        <li>650-449-7300</li>
-        <span class="flex text-[#DCDCDC] items-center justify-center md:justify-start">
-          <i class="ri-linkedin-box-fill"></i>
-          <i class="ri-twitter-fill"></i>
-          <i class="ri-youtube-fill"></i>
-          <i class="ri-facebook-fill"></i>
-        </span>
-      </ul>
-
-      <ul class="space-y-4 text-center md:text-left">
-        <li>SOLUTIONS</li>
-        <li>Rewards Program</li>
-        <li>Social Media Automation</li>
-        <li>Referral Program</li>
-        <li>Smart Popups</li>
-        <li>Notification Widget</li>
-        <li>
-          <a href="foxx.html" title="email automation">Marketing Emails</a>
-        </li>
-      </ul>
-      <ul class="space-y-4 text-center md:text-left">
-        <li>RESOURCES</li>
-        <li>Customers</li>
-        <li>Request a demo</li>
-        <li>Help Center</li>
-        <li>API</li>
-      </ul>
-      <ul class="space-y-4 text-center md:text-left">
-        <li>BLOG</li>
-        <li>Market Research</li>
-        <li>How to</li>
-        <li>Apps & Tools</li>
-        <li>Interview</li>
-      </ul>
-      <ul class="space-y-4 text-center md:text-left">
-        <li>COMPANY</li>
-        <li>About us</li>
-        <li>Privacy policy</li>
-        <li>Term of use</li>
-        <li class="list-disc">Contact</li>
-      </ul>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-  <script>
-    const swiper = new Swiper(".swiper", {
-      slidesPerView: 3,
-      loop: true,
-      spaceBetween: 20,
-      autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
-      },
-      speed: 10000,
-      breakpoints: {
-        0: {
-          slidesPerView: 1.2,
+    <script>
+      const swiper = new Swiper(".swiper", {
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 20,
+        autoplay: {
+          delay: 0,
+          disableOnInteraction: false,
         },
-        600: {
-          slidesPerView: 3,
+        speed: 10000,
+        breakpoints: {
+          0: {
+            slidesPerView: 1.2,
+          },
+          600: {
+            slidesPerView: 3,
+          },
         },
-      },
-    })
-  </script>
-</body>
-
+      });
+    </script>
+  </body>
 </html>
